@@ -15,11 +15,16 @@ public class Matriz {
     }
 
     public void llenarAleatoriamente() {
+        llenarAleatoriamente(0, 100);
+    }
+
+    public void llenarAleatoriamente(int minimo, int maximo) {
         Random random = new Random();
 
         for (int fila = 0; fila < filas; fila++) {
             for (int columna = 0; columna < columnas; columna++) {
-                datos[fila][columna] = random.nextInt(101);
+                datos[fila][columna] =
+                        random.nextInt(maximo - minimo + 1) + minimo;
             }
         }
     }
@@ -46,5 +51,51 @@ public class Matriz {
         }
 
         return null;
+    }
+
+    public int sumarDiagonalSecundaria() {
+
+        int suma = 0;
+
+        for (int fila = 0; fila < filas; fila++) {
+            int columna = columnas - 1 - fila;
+            suma += datos[fila][columna];
+        }
+
+        return suma;
+    }
+
+    public boolean esSimetrica() {
+
+        if (filas != columnas) {
+            return false;
+        }
+
+        for (int fila = 0; fila < filas; fila++) {
+            for (int columna = 0; columna < columnas; columna++) {
+
+                if (datos[fila][columna] != datos[columna][fila]) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    public int obtenerElemento(int fila, int columna) {
+        return datos[fila][columna];
+    }
+
+    public int[][] obtenerDatos() {
+        return datos;
+    }
+
+    public int getFilas() {
+        return filas;
+    }
+
+    public int getColumnas() {
+        return columnas;
     }
 }
