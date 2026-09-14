@@ -55,7 +55,9 @@ Taller-Arrays/
 
 │   │   ├── Ejercicio4MayorMenor.java
 
-│   │   └── Ejercicio5InvertirNumeros.java
+│   │   ├──Ejercicio5InvertirNumeros.java
+
+│   │   └── UtilidadesArreglos.java 
 
 │   │
 
