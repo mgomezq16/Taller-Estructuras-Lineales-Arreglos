@@ -118,11 +118,11 @@ Los ejercicios están organizados de la siguiente manera:
 
 
 
-*Arreglos: ejercicios 1 al 5.
+* Arreglos: ejercicios 1 al 5.
 
-*ArrayList: ejercicios 6 al 10(PartidosLiga).
+* ArrayList: ejercicios 6 al 10(PartidosLiga).
 
-*Matrices: ejercicios 11 al 15.
+* Matrices: ejercicios 11 al 15.
 
 
 
@@ -160,7 +160,7 @@ También se utilizaron nombres descriptivos para variables y métodos, separaci�
 
 
 
-*María de los Ángeles Gómez
+* María de los Ángeles Gómez
 
 
 
