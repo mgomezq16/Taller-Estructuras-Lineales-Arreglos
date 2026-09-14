@@ -17,7 +17,6 @@ public class Matriz {
     public void llenarAleatoriamente() {
         llenarAleatoriamente(0, 100);
     }
-
     public void llenarAleatoriamente(int minimo, int maximo) {
         Random random = new Random();
 
@@ -82,7 +81,6 @@ public class Matriz {
 
         return true;
     }
-
     public int obtenerElemento(int fila, int columna) {
         return datos[fila][columna];
     }
@@ -98,4 +96,19 @@ public class Matriz {
     public int getColumnas() {
         return columnas;
     }
+public Matriz transpuesta() {
+
+    Matriz resultado = new Matriz(columnas, filas);
+
+    for (int fila = 0; fila < filas; fila++) {
+        for (int columna = 0; columna < columnas; columna++) {
+            resultado.datos[columna][fila] = datos[fila][columna];
+        }
+    }
+
+    return resultado;
+}
+public void establecerElemento(int fila, int columna, int valor) {
+    datos[fila][columna] = valor;
+}
 }
