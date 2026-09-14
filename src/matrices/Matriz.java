@@ -111,4 +111,17 @@ public Matriz transpuesta() {
 public void establecerElemento(int fila, int columna, int valor) {
     datos[fila][columna] = valor;
 }
+ public void intercambiarPrimeraYSegundaFila() {
+
+    if (filas < 2) {
+        return;
+    }
+
+    for (int columna = 0; columna < columnas; columna++) {
+
+        int temporal = datos[0][columna];
+        datos[0][columna] = datos[1][columna];
+        datos[1][columna] = temporal;
+    }
+    }
 }
