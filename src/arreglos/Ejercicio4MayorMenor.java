@@ -5,28 +5,23 @@ import java.util.Random;
 public class Ejercicio4MayorMenor {
 
     public static void main(String[] args) {
-
-        int[] numeros = generarNumeros();
+        int[] numeros = generarNumeros(25);
 
         int menor = encontrarMenor(numeros);
         int mayor = encontrarMayor(numeros);
 
-        System.out.println("Números del arreglo:");
+        System.out.println("Números generados:");
+        UtilidadesArreglos.imprimir(numeros);
 
-        for (int numero : numeros) {
-            System.out.print(numero + " ");
-        }
-
-        System.out.println("\n\nNúmero menor: " + menor);
+        System.out.println("\nNúmero menor: " + menor);
         System.out.println("Número mayor: " + mayor);
     }
 
-    public static int[] generarNumeros() {
-
+    public static int[] generarNumeros(int cantidad) {
         Random aleatorio = new Random();
-        int[] numeros = new int[25];
+        int[] numeros = new int[cantidad];
 
-        for (int i = 0; i < numeros.length; i++) {
+        for (int i = 0; i < cantidad; i++) {
             numeros[i] = aleatorio.nextInt(101) - 50;
         }
 
@@ -34,7 +29,6 @@ public class Ejercicio4MayorMenor {
     }
 
     public static int encontrarMenor(int[] numeros) {
-
         int menor = numeros[0];
 
         for (int numero : numeros) {
@@ -47,7 +41,6 @@ public class Ejercicio4MayorMenor {
     }
 
     public static int encontrarMayor(int[] numeros) {
-
         int mayor = numeros[0];
 
         for (int numero : numeros) {

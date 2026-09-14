@@ -6,7 +6,9 @@ public class Ejercicio2Pares {
 
         int[] numerosPares = generarNumerosPares(100);
 
-        imprimirEnUnaLinea(numerosPares);
+        System.out.println("Números pares en una línea:");
+        UtilidadesArreglos.imprimir(numerosPares);
+
         imprimirEnDiezLineas(numerosPares);
     }
 
@@ -21,17 +23,6 @@ public class Ejercicio2Pares {
         return numerosPares;
     }
 
-    public static void imprimirEnUnaLinea(int[] numerosPares) {
-
-        System.out.println("Números pares en una línea:");
-
-        for (int numero : numerosPares) {
-            System.out.print(numero + " ");
-        }
-
-        System.out.println();
-    }
-
     public static void imprimirEnDiezLineas(int[] numerosPares) {
 
         System.out.println("\nNúmeros pares en 10 líneas:");
@@ -39,11 +30,12 @@ public class Ejercicio2Pares {
         for (int i = 0; i < numerosPares.length; i++) {
 
             if (i % 10 == 0) {
-                System.out.println();
-                System.out.print("Línea " + ((i / 10) + 1) + ": ");
+                System.out.print("\nLínea " + ((i / 10) + 1) + ": ");
             }
 
             System.out.print(numerosPares[i] + " ");
         }
+
+        System.out.println();
     }
 }
