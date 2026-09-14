@@ -1,8 +1,8 @@
-\# Taller de Arreglos, ArrayList y Matrices
+## Taller de Arreglos, ArrayList y Matrices
 
 
 
-\## Información del estudiante
+## Información del estudiante
 
 
 
@@ -10,7 +10,7 @@ Nombre: María de los Ángeles Gómez
 
 
 
-\## Descripción
+## Descripción
 
 
 
@@ -26,25 +26,18 @@ Durante el desarrollo se aplicaron conceptos de Programación Orientada a Objeto
 
 
 
-\## Tecnologías utilizadas
+## Tecnologías utilizadas
 
 
 
-\* Java
-
-\* Visual Studio Code
-
-\* Git y GitHub
-
-\* Ejecución desde consola
+* Java
+* Visual Studio Code
+* Git y GitHub
+* Ejecución desde consola
 
 
 
-\## Estructura del proyecto
-
-
-
-```text
+## Estructura del proyecto
 
 Taller-Arrays/
 
@@ -104,23 +97,20 @@ Taller-Arrays/
 
 └── README.md
 
-```
+
+## Instrucciones para ejecutar
 
 
 
-\## Instrucciones para ejecutar
+1. Tener instalado Java JDK.
 
+2. Abrir la carpeta `Taller-Arrays`.
 
+3. Abrir una terminal dentro de la carpeta del proyecto.
 
-1\. Tener instalado Java JDK.
+4. Compilar el ejercicio que se desea ejecutar.
 
-2\. Abrir la carpeta `Taller-Arrays`.
-
-3\. Abrir una terminal dentro de la carpeta del proyecto.
-
-4\. Compilar el ejercicio que se desea ejecutar.
-
-5\. Ejecutar el programa desde la consola.
+5. Ejecutar el programa desde la consola.
 
 
 
@@ -128,15 +118,15 @@ Los ejercicios están organizados de la siguiente manera:
 
 
 
-\* \*\*Arreglos:\*\* ejercicios 1 al 5.
+*Arreglos: ejercicios 1 al 5.
 
-\* \*\*ArrayList:\*\* ejercicios 6 al 10(PartidosLiga).
+*ArrayList: ejercicios 6 al 10(PartidosLiga).
 
-\* \*\*Matrices:\*\* ejercicios 11 al 15.
+*Matrices: ejercicios 11 al 15.
 
 
 
-\### Ejemplo de ejecución
+## Ejemplo de ejecución
 
 
 
@@ -154,61 +144,7 @@ java -cp .\\bin matrices.Ejercicio15
 
 Para los demás ejercicios, se debe indicar la ruta correspondiente del archivo `.java` y el nombre completo de la clase.
 
-
-
-\## Ejercicios desarrollados
-
-
-
-\### Arreglos
-
-
-
-\* Ejercicio 1: Primeros 10 números primos.
-
-\* Ejercicio 2: Primeros 100 números pares.
-
-\* Ejercicio 3: Números aleatorios y factoriales.
-
-\* Ejercicio 4: Número menor y mayor de un arreglo.
-
-\* Ejercicio 5: Inversión de números.
-
-
-
-\### ArrayList
-
-
-
-\* Ejercicio 6: Números aleatorios, suma y media.
-
-\* Ejercicio 7: Inserción y eliminación manteniendo el orden.
-
-\* Ejercicio 8: Frecuencia de números aleatorios.
-
-\* Ejercicio 9: Ordenamiento y separación de números pares e impares.
-
-\* Ejercicio 10: Funcionalidades adicionales para partidos de fútbol.
-
-
-
-\### Matrices
-
-
-
-\* Ejercicio 11: Búsqueda de un número y primera ocurrencia.
-
-\* Ejercicio 12: Suma de la diagonal secundaria.
-
-\* Ejercicio 13: Comprobación de matriz simétrica y esquinas.
-
-\* Ejercicio 14: Matriz transpuesta.
-
-\* Ejercicio 15: Intercambio de la primera y segunda fila.
-
-
-
-\## Programación Orientada a Objetos y Clean Code
+## Programación Orientada a Objetos y Clean Code
 
 
 
@@ -220,11 +156,11 @@ También se utilizaron nombres descriptivos para variables y métodos, separaci�
 
 
 
-\## Autor
+## Autor
 
 
 
-\*\*María de los Ángeles Gómez\*\*
+*María de los Ángeles Gómez
 
 
 
