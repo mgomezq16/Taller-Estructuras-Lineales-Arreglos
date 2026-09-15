@@ -1,44 +1,36 @@
 package matrices;
 
-import java.util.Scanner;
-
 public class Ejercicio14 {
 
+    private static final int FILAS = 2;
+    private static final int COLUMNAS = 3;
+
     public static void main(String[] args) {
+        Matriz matriz = crearMatrizPredeterminada();
 
-        Scanner entrada = new Scanner(System.in);
-
-        System.out.print("Ingrese el número de filas: ");
-        int filas = entrada.nextInt();
-
-        System.out.print("Ingrese el número de columnas: ");
-        int columnas = entrada.nextInt();
-
-        Matriz matriz = new Matriz(filas, columnas);
-
-        System.out.println("\nIngrese los valores de la matriz:");
-
-        for (int fila = 0; fila < filas; fila++) {
-            for (int columna = 0; columna < columnas; columna++) {
-
-                System.out.print(
-                        "Valor [" + fila + "][" + columna + "]: "
-                );
-
-                int valor = entrada.nextInt();
-
-                matriz.establecerElemento(fila, columna, valor);
-            }
-        }
-
-        System.out.println("\nMatriz original:");
+        System.out.println("Matriz original:");
         matriz.imprimir();
 
         Matriz transpuesta = matriz.transpuesta();
 
         System.out.println("\nMatriz transpuesta:");
         transpuesta.imprimir();
+    }
 
-        entrada.close();
+    private static Matriz crearMatrizPredeterminada() {
+        int[][] valores = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
+
+        Matriz matriz = new Matriz(FILAS, COLUMNAS);
+
+        for (int fila = 0; fila < FILAS; fila++) {
+            for (int columna = 0; columna < COLUMNAS; columna++) {
+                matriz.establecerElemento(fila, columna, valores[fila][columna]);
+            }
+        }
+
+        return matriz;
     }
 }
